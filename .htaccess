@@ -1,8 +1,0 @@
-RewriteEngine On
-php_value upload_max_filesize 100M
-php_value post_max_size 100M
-php_value session.gc_maxlifetime 3000
-RewriteRule ^app_scripts/(.*)$ application/views/scripts/$1 [L]
-RewriteRule ^app_images/(.*)$ application/views/images/$1 [L]
-RewriteRule ^app_styles/(.*)$ application/views/styles/$1 [L]
-RewriteRule ^(.*)/$ index.php?rt=$1 [L]
